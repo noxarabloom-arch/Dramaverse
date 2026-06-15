@@ -7,7 +7,8 @@
   publish   = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "20"
+  # @tanstack/react-start requires Node >=22.12.0 — do NOT set lower.
+  NODE_VERSION = "22"
   NPM_FLAGS    = "--legacy-peer-deps"
 
 # SSR: all non-static requests handled by the Nitro server function

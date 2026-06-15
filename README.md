@@ -38,7 +38,7 @@ In **Site settings → Environment variables**, add:
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | same as above | Needed for client-side |
 | `VITE_SUPABASE_PROJECT_ID` | same as above | Needed for client-side |
 | `SUPABASE_SERVICE_ROLE_KEY` | `eyJ...` | **Secret** — server only |
-| `NODE_VERSION` | `20` | Already set in netlify.toml |
+| `NODE_VERSION` | `22` | Required — @tanstack/react-start needs Node ≥22.12.0 |
 
 ### 4 — Deploy
 Click **Trigger deploy → Deploy site**. Build takes ~60–90s.
